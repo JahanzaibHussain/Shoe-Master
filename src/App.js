@@ -1,10 +1,12 @@
 import React from 'react';
 import './assets/output.css';
 import Navbar from './layouts/navbar'
+import Footer from './layouts/footer'
 import {BrowserRouter as Router , Routes, Route } from 'react-router-dom'
 import Index from './pages/index'
 import Shop from './pages/shop'
 import Contact from './pages/contact'
+
 function App() {
   return (
     <Router>
@@ -14,6 +16,7 @@ function App() {
         <Route path="/shop" element={<Shop/>} />
         <Route path="/contact" element={<Contact/>} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
