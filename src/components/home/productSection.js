@@ -9,7 +9,7 @@ function ProductSection() {
      <div>
             <div className="mt-12 mb-6">
                 <div className="text-4xl text-center text-primary ">
-                    Most Trending Items Are
+                    Most Trending 
                 </div>
             </div>
             <div className="container mx-auto flex md:flex-row flex-col justify-center items-center md:space-x-8 space-x-0 " >
@@ -84,7 +84,7 @@ function ProductSection() {
                 Lorem ipsum dolor sit amet consectetur.
             </p>
                 <button className="mt-2  transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                  Shop Now <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  Shop Now <i className="fa fa-chevron-right" aria-hidden="true"></i>
                 </button>
             </div>
 

@@ -20,8 +20,8 @@ function LandingSection() {
                         y2="0.119"
                         gradientUnits="objectBoundingBox"
                     >
-                        <stop offset="0" stop-color="#212121" />
-                        <stop offset="1" stop-color="#df9210" />
+                        <stop offset="0" stopColor="#212121" />
+                        <stop offset="1" stopColor="#df9210" />
                     </linearGradient>
                     </defs>
                     <path

@@ -196,3 +196,10 @@ body{
 .a {
     fill: url(#a);
 }
+
+nav  .active {
+    color: #db9f2b;
+}
+#menu-toggle:checked + #menu {
+    display: block;
+  }
