@@ -8,7 +8,7 @@ function FirstSection() {
             <div className="flex md:flex-row flex-col justify-between items-center">
                 <div className="w-1/2 items-center">
                     <div className="border-primary border-0 sm:pr-8 sm:border-r-2">
-                        <div className="text-2xl text-center sm:text-right text-primary">
+                        <div className="text-2xl mx-6 text-center sm:text-right md:text-right text-primary">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit?
                         </div>
                     </div>          
@@ -23,7 +23,7 @@ function FirstSection() {
             <div className="mt-6 flex md:flex-row flex-col justify-between items-center">
                 <div className="w-1/2 items-center">
                     <div className="border-primary border-0  sm:pr-8 sm:border-r-2">
-                    <div className="text-2xl text-center sm:text-right text-primary">
+                    <div className="text-2xl mx-6 text-center sm:text-right text-primary">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit?
                     </div>
                     </div>          
