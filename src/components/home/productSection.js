@@ -31,7 +31,7 @@ function ProductSection() {
                             <span></span>
                             <span></span>
                         </div>
-                        <Link to="/shop" className="add-btn mt-32 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded">Show</Link>
+                        <Link to="/shop" className="add-btn mt-32 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded">Shop Now</Link>
                     </div>
                 </div>
                 
@@ -53,7 +53,7 @@ function ProductSection() {
                             <span></span>
                             <span></span>
                         </div>
-                        <Link to="/shop" className="add-btn mt-32 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded">Show</Link>
+                        <Link to="/shop" className="add-btn mt-32 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded">Shop Now</Link>
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@ function ProductSection() {
                             <span></span>
                             <span></span>
                         </div>
-                        <Link to="/shop" className="add-btn mt-32 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded">Show</Link>            </div>
+                        <Link to="/shop" className="add-btn mt-32 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded">Shop Now</Link>            </div>
                 </div>
                 
             </div>
@@ -84,7 +84,7 @@ function ProductSection() {
                 Lorem ipsum dolor sit amet consectetur.
             </p>
                 <button className="mt-2  transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                  Shop Now <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                  See More <i className="fa fa-chevron-right" aria-hidden="true"></i>
                 </button>
             </div>
 

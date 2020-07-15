@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import mainImg from '../assets/imgs/shoe1.png'
 import img1 from '../assets/imgs/black.png'
 import img2 from '../assets/imgs/red.png'
@@ -25,9 +26,9 @@ function Shop() {
                             </p>
                         </div>
                         <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
+                            <Link to="/product" className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
+                                Buy 2
+                            </Link>
                         </div>
                     </div>
                 </div> 
@@ -57,9 +58,9 @@ function Shop() {
                             </p>
                         </div>
                         <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
+                            <Link to="/product" className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
+                                Buy 2
+                            </Link>
                         </div>
                     </div>
                 </div> 
