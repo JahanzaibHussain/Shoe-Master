@@ -56,6 +56,17 @@ body{
 .container .card:hover:before{
     clip-path: circle(300px at 80% -20%);
 }
+.shoe-card:hover{
+    transition: 0.5s;
+    background-color: #2b2b2b;
+}
+.shoe-card:hover .shop-img{
+    transform: rotate(-13deg) translateY(-4%);
+}
+.shop-img{
+    transition: 0.5s;
+    transform:  rotate(0deg);
+}
 
 .img-bx{
     position: absolute;
