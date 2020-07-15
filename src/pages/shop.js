@@ -23,7 +23,7 @@ function Shop() {
               />
               <div className="px-6 py-4 text-primary text-center">
                 <div className="font-bold  text-2xl mb-2">{shoes.shoeName}</div>
-                <p className="text-white text-base">{shoes.price}</p>
+                <p className="text-white text-base">{shoes.price}.0 Rs</p>
               </div>
               <div className="flex pb-4 justify-center">
                 <Link

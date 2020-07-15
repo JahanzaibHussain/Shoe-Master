@@ -35,13 +35,14 @@ function LandingSection() {
             <div className="w-full h-full flex lg:flex-row flex-col justify-center items-center">
                 <div className="w-6/12 flex flex-col justify-center">
                     <h1
-                    className="p-4 w-full px-4 lg:text-5xl text-xl text-gray-200 font-bold mt-6 ml-4 z-10"
+                    className="w-full px-3 text-3xl text-center sm:text-4xl md:text-5xl md:text-center lg:text-5xl lg:text-left text-gray-300 font-bold z-10"
                     >
-                    Life is short, your heels shouldn't be!          
+                    ULTRABOOST 20
                     </h1>
-                    <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                    Button
-                    </button>
+                    <p className="w-full px-4 text-center sm:text-left text-sm text-gray-400 lg:text-md font-bold z-10">
+                        Endless energy return and instant comfort with each stride to keep you going further.      
+                    </p>
+                    
                 </div>
                 <div className="w-6/12 flex flex-col justify-center">
                     <img

@@ -80,12 +80,12 @@ function ProductSection() {
                 
             </div>
             <div className="my-2 text-2xl text-center text-primary">
-            <p>
-                Lorem ipsum dolor sit amet consectetur.
-            </p>
-                <button className="mt-2  transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                  See More <i className="fa fa-chevron-right" aria-hidden="true"></i>
-                </button>
+                <p className="mb-3">
+                    Quickly find the shoes you are looking for.
+                </p>
+                <Link to="/" className="mt-4 transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary">
+                    See More <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                </Link>
             </div>
 
      </div>

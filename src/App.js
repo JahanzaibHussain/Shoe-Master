@@ -7,6 +7,7 @@ import Index from "./pages/index";
 import Shop from "./pages/shop";
 import Product from "./pages/product";
 import Contact from "./pages/contact";
+import NotFound from "./pages/notfound";
 import { GlobalContextProvider } from "./context/globalContext";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/shop/:slug" element={<Product />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </GlobalContextProvider>

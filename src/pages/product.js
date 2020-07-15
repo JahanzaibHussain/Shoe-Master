@@ -16,11 +16,11 @@ function Product() {
           <div className="flex justify-center w-full">
             <img src={shoe.image} alt="Product 1" />
           </div>
-          <div className="col-span-2 p-4 bg-secondary-200 rounded text-white p-10">
+          <div className="col-span-2 bg-secondary-200 rounded text-white p-10">
             <h2 className="text-primary text-2xl border-primary border-b-2 mb-4">
               {shoe.shoeName}
             </h2>
-            <p className="pt-4 text-primary text-2xl">Price: {shoe.price}rs</p>
+            <p className="pt-4 text-primary text-2xl">Price: {shoe.price}.0 rs</p>
             <p className="py-2">{shoe.description}</p>
 
             <Link
