@@ -1,24 +1,27 @@
-import React from 'react';
-import './assets/output.css';
-import Navbar from './layouts/navbar'
-import Footer from './layouts/footer'
-import {BrowserRouter as Router , Routes, Route } from 'react-router-dom'
-import Index from './pages/index'
-import Shop from './pages/shop'
-import Product from './pages/product'
-import Contact from './pages/contact'
+import React from "react";
+import "./assets/output.css";
+import Navbar from "./layouts/navbar";
+import Footer from "./layouts/footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Index from "./pages/index";
+import Shop from "./pages/shop";
+import Product from "./pages/product";
+import Contact from "./pages/contact";
+import { GlobalContextProvider } from "./context/globalContext";
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" exact element={<Index/>} />
-        <Route path="/shop" element={<Shop/>} />
-        <Route path="/product" element={<Product/>} />
-        <Route path="/contact" element={<Contact/>} />
-      </Routes>
-      <Footer />
+      <GlobalContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path="/" exact element={<Index />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/:slug" element={<Product />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </GlobalContextProvider>
     </Router>
   );
 }

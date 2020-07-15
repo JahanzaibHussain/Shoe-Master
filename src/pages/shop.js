@@ -1,185 +1,44 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import mainImg from '../assets/imgs/shoe1.png'
-import img1 from '../assets/imgs/black.png'
-import img2 from '../assets/imgs/red.png'
-import img3 from '../assets/imgs/green.png'
-import img4 from '../assets/imgs/blue.png'
-import img5 from '../assets/imgs/orange.png'
-import img6 from '../assets/imgs/pro1.png'
-import img7 from '../assets/imgs/pro2.jpg'
-import img8 from '../assets/imgs/pro3.jpg'
-import img9 from '../assets/imgs/prop4.jpg'
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+
+import { ShoeDataContext } from "../context/globalContext";
 
 function Shop() {
-    return (
-        <>
-            <h2 className="text-primary text-center text-4xl ">Products</h2>
-            <div class="mx-2 mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="rounded overflow-hidden">
-                        <img class="shop-img w-full" src={mainImg} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <Link to="/product" className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 2
-                            </Link>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img4} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img5} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <Link to="/product" className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 2
-                            </Link>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">  
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img1} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img2} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img3} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img8} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img7} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img7} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
-                <div className="shoe-card bg-secondary-200 rounded mx-2 my-2">
-                    <div class="max-w-sm rounded overflow-hidden">
-                        <img class="shop-img w-full" src={img6} alt="Sunset in the mountains" />
-                        <div class="px-6 py-4 text-primary text-center">
-                            <div class="font-bold  text-2xl mb-2">Air Max</div>
-                            <p class="text-white text-base">
-                                Rs 2300.0
-                            </p>
-                        </div>
-                        <div class="flex pb-4 justify-center">
-                            <button className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                                Buy 
-                            </button>
-                        </div>
-                    </div>
-                </div> 
+  const { shoes } = useContext(ShoeDataContext);
+  return (
+    <>
+      <h2 className="text-primary text-center text-4xl ">Products</h2>
 
+      <div className="mx-2 mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
+        {shoes.map((shoes) => (
+          <div
+            key={shoes.id}
+            className="shoe-card bg-secondary-200 rounded mx-2 my-2"
+          >
+            <div className="rounded overflow-hidden">
+              <img
+                className="shop-img w-full"
+                src={shoes.image}
+                alt="Sunset in the mountains"
+              />
+              <div className="px-6 py-4 text-primary text-center">
+                <div className="font-bold  text-2xl mb-2">{shoes.shoeName}</div>
+                <p className="text-white text-base">{shoes.price}</p>
+              </div>
+              <div className="flex pb-4 justify-center">
+                <Link
+                  to={`${shoes.slug}`}
+                  className="transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-sm px-8 py-1 rounded hover:border-2 hover:bg-secondary-100 hover:text-primary"
+                >
+                  Buy
+                </Link>
+              </div>
             </div>
-        </>
-    )
+          </div>
+        ))}
+      </div>
+    </>
+  );
 }
 
-export default Shop
+export default Shop;

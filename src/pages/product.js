@@ -1,37 +1,43 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { useParams, Link } from "react-router-dom";
 
-import img1 from '../assets/imgs/black.png'
-import img2 from '../assets/imgs/red.png'
-import img3 from '../assets/imgs/green.png'
-import img4 from '../assets/imgs/blue.png'
-import img5 from '../assets/imgs/orange.png'
-import img6 from '../assets/imgs/pro1.png'
-import img7 from '../assets/imgs/pro2.jpg'
-import img8 from '../assets/imgs/pro3.jpg'
-import img9 from '../assets/imgs/prop4.jpg'
-
+import { ShoeDataContext } from "../context/globalContext";
 
 function Product() {
-    return (
-        <div className="grid  grid-cols-3 gap-4 my-4 mx-4 ">
-              <div class="col-span-1">
-                    <img src={img1} alt="Product 1"/>
-              </div>
-              <div class="col-span-2 p-4 bg-secondary-200 rounded text-white">
-                <h2 className="text-primary text-2xl border-primary border-b-2">Air Max</h2>
-                <p className="">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque pariatur, libero sed labore velit doloribus rerum voluptas odio amet, aut nam obcaecati explicabo est numquam iste dolor sunt aliquid.
-                </p>
+  const { shoes } = useContext(ShoeDataContext);
+  const { slug } = useParams();
 
-                <button className="mt-2  transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                  Add to Cart <i className="fa fa-chevron-right" aria-hidden="true"></i>
-                </button>
-                <button className="mt-2  transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary">
-                  <i className="fa fa-chevron-left" aria-hidden="true"></i> Back 
-                </button>
-              </div>
-        </div> 
-    )
+  const shoeData = shoes.filter((shoe) => shoe.slug === slug);
+
+  return (
+    <>
+      {shoeData.map((shoe) => (
+        <div key={shoe.id} className=" my-4 mx-4 ">
+          <div className="flex justify-center w-full">
+            <img src={shoe.image} alt="Product 1" />
+          </div>
+          <div className="col-span-2 p-4 bg-secondary-200 rounded text-white p-10">
+            <h2 className="text-primary text-2xl border-primary border-b-2 mb-4">
+              {shoe.shoeName}
+            </h2>
+            <p className="pt-4 text-primary text-2xl">Price: {shoe.price}rs</p>
+            <p className="py-2">{shoe.description}</p>
+
+            <Link
+              to="/shop"
+              className="mt-2  mr-2 transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary"
+            >
+              <i className="fa fa-chevron-left" aria-hidden="true"></i> Back
+            </Link>
+            <button className="mt-2  transition duration-500 border-primary border-2 bg-primary text-secondary-100 text-lg px-4 py-2 rounded  hover:border-2 hover:bg-secondary-100 hover:text-primary">
+              Add to Cart
+              <i className="fa fa-cart-plus pl-2" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      ))}
+    </>
+  );
 }
 
-export default Product
+export default Product;
